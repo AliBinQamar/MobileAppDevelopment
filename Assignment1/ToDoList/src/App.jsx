@@ -48,7 +48,7 @@ function TodoList() {
           placeholder="Add a new task..."
         />
         <button className="add-btn" onClick={handleAddTodo}>
-          Add the Task
+          Add to List
         </button>
       </div>
 
