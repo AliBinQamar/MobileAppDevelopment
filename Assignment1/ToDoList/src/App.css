@@ -1,0 +1,107 @@
+/* 1. Global Reset & Full Height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* Light page background */
+  font-family: Arial, sans-serif;
+}
+
+/* 2. Centering the Container */
+.todo-list-container {
+  /* Positioning: Put it in the center */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Crucial for perfect center alignment */
+  
+  /* Sizing and Look */
+  width: 90%;
+  max-width: 450px; /* A neat size for a todo list */
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Simple shadow */
+}
+
+/* --- Rest of your component styles follow below --- */
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Input Area Styling */
+.input-area {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-area input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Button Styling */
+.add-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* To-Do List Styling */
+.todos-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 6px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border-left: 4px solid #28a745; /* Simple green indicator */
+}
+
+.todo-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Empty State */
+.no-tasks {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 20px;
+}
