@@ -12,7 +12,7 @@ function TodoList() {
         id: Date.now(), // Use a timestamp for a unique ID
         text: inputValue.trim(),
       };
-      setTodos([...todos, newTodo]);
+      setTodos([...todos, newTodo]);s
       setInputValue(''); // Clear the input field
     }
   };
